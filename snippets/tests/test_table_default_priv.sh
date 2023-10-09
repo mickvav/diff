@@ -14,6 +14,6 @@ if [ ! "$(echo -n $resSelect)" = 'ALTER DEFAULT PRIVILEGES FOR USER "test3user" 
 fi
 
 if [ ! "$(echo -n $resInsert)" = 'ALTER DEFAULT PRIVILEGES FOR USER "test3user" IN SCHEMA "test3schema" GRANT INSERT ON TABLES TO "test3user"' ]; then
-  echo "INSERT is missing: $resSelect"
+  echo "INSERT is missing: $resInsert"
   exit 1
 fi
